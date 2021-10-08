@@ -10,7 +10,7 @@ int main()
 {
     std::string str;
     std::cout << "Input email address: " << std::endl;
-    std::cin >> str;
+    std::getline(std::cin, str);
     std::string prefix = getPrefix(str);
     std::string domain = getDomain(str);
     std::cout << ((checkPrefix(prefix) && checkDomain(domain)) ? "Yes" : "No") << std::endl;
